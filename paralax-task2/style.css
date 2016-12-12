@@ -1,0 +1,46 @@
+#hero {
+    height: 6000px;
+    overflow: hidden;
+    position: relative;
+}
+
+.layer {
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 3000px;
+    position: fixed;
+    z-index: -1;
+}
+
+.layer1 {
+    background-image: url(http://monsterart.ru/resources/png/food/fruits/fruits005.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-left: 20%;
+}
+
+.layer2 {
+    background-image: url(http://pngimg.com/upload/water_PNG3307.png);
+}
+
+.layer3 {
+    background-image: url(http://pngimg.com/upload/water_PNG3307.png);
+}
+
+.layer4 {
+    background-image: url(http://pngimg.com/upload/water_PNG3307.png);
+}
+
+.layer5 {
+    background-image: url(http://pngimg.com/upload/water_PNG3307.png);
+}
+
+.layer6 {
+    background-image: url(http://pngimg.com/upload/water_PNG3307.png);
+}
+
+.layer7 {
+    background-image: url(http://pngimg.com/upload/water_PNG3307.png);
+}
