@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="main">
+    <h3>Метод event.stopPropagation()</h3>
+    <p>При настанні події обробники спочатку спрацьовують на елементі на якому відбулась подія, потім на його
+        батьківському елементі, потім вище і так далі, вгору по ланцюжку вкладеності. Остання подія вспливає на тегу
+        body.<br>
+        Якщо включити метод stopPropagation(), то всплиття зупинеться. Тобто буде спрацьовувати тільки клік на
+        конкретному елементі.
+    </p>
+    <br>
+    <p></p>
+    <div class="conteiner">
+        <div id="box1" class="box">
+            <div id="box2" class="box">
+                <div id="box3" class="box"></div>
+            </div>
+        </div>
+        <div id="box11" class="box">
+            <div id="box21" class="box">
+                <div id="box31" class="box"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h3>Метод event.preventDefault()</h3>
+    <p>Даний метод дозволяє виключити поведінку браузера по замовчуванню. Наприклад якщо застосувати метод
+        preventDefault() можна відключити перехід по ссилкі.</p>
+    <br>
+    <div class="links">
+        <a href="https://google.com" id="link1">Ссилка з preventDefault()</a><br><br><br>
+        <a href="https://google.com" id="link2">Ссилка без preventDefault()</a>
+    </div>
+    <div class="diff">
+        Різниця між цими двома методами полягає у тому, що метод stopPropagation() блокує вспливання події відносно
+        батьківського елементу.
+        А метод preventDefault() виключає дефолтну поведінку браузера і можна перехопити і змінити подію (наприклад клік
+        по ссилці).
+    </div>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
